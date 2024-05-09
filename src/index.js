@@ -3,13 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import logo from './logo.svg';
+import './App.css';
+import Login from './Login';
+import Dashboard from './Dashboard';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route path="Login" element={<Login />} />
+          <Route path="Dashboard" element={<Dashboard />} />
+        </Route>
+      </Routes>
+    </BrowserRouter >
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

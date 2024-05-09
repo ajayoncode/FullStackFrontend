@@ -18,14 +18,26 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.Login-style {
+  flex-direction: row;
+  justify-content: space-around;
+  color: #61dafb;
+align-items: flex-start;
+}
 .App-link {
   color: #61dafb;
+}
+.dash-style{
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 @keyframes App-logo-spin {
